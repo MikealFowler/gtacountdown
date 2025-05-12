@@ -27,7 +27,6 @@ function calculateTimeLeft(): TimeLeft {
 
 export default function CountdownPage() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
-  const tickSound = useRef<HTMLAudioElement | null>(null);
   const previousTimeRef = useRef<TimeLeft>(timeLeft);
 
   useEffect(() => {
